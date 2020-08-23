@@ -1,14 +1,20 @@
 package com.artarkatesoft.artsfgjms.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.UUID;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class HelloWorldMessage implements Serializable {
 
-    private static final long serialVersionUID = 9131247799733856565L;
+    private static final long serialVersionUID = -3511259699122791863L;
 
     private UUID id;
     private String message;
